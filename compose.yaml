@@ -9,8 +9,6 @@ services:
         ports:
             - "127.0.0.1:12025:25/tcp"
             - "127.0.0.1:12143:143/tcp"
-        networks:
-            - network20
         restart: unless-stopped
         image: ghcr.io/videocurio/proton-mail-bridge:latest
 volumes:
