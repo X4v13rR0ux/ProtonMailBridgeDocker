@@ -13,9 +13,5 @@ services:
             - network20
         restart: unless-stopped
         image: ghcr.io/videocurio/proton-mail-bridge:latest
-networks:
-    network20:
-        external: true
-        name: network20
 volumes:
     mail_data:
